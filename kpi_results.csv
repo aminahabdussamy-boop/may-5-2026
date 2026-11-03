@@ -1,0 +1,7 @@
+policy,sku,demand_units,fulfilled_units,stockout_units,fill_rate,orders,holding_cost,stockout_cost,order_cost,total_cost
+baseline,SKU-A,1293,1282,11,0.9915,10,576.24,55.0,10632.0,11263.24
+baseline,SKU-B,758,756,2,0.9974,7,738.9,16.0,11914.0,12668.9
+baseline,SKU-C,1563,1552,11,0.993,14,312.4,38.5,5916.0,6266.9
+agent,SKU-A,1293,1291,2,0.9985,21,308.16,10.0,10080.0,10398.16
+agent,SKU-B,758,735,23,0.9697,17,364.86,184.0,10710.0,11258.86
+agent,SKU-C,1563,1548,15,0.9904,16,299.6,52.5,5760.0,6112.1
