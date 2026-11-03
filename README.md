@@ -4,7 +4,7 @@ This submission contains a working multi-SKU inventory replenishment simulation.
 
 ## Files
 
-- `InventoryReplenishmentAgent.ipynb` — runnable notebook
+- `InventoryReplenishmentAgent_Colab.ipynb` — runnable notebook
 - `sales.csv` — 120 days of daily demand for 3 SKUs
 - `inventory.csv` — opening stock by SKU
 - `params.csv` — cost, lead-time, minimum-order, and service-level inputs
