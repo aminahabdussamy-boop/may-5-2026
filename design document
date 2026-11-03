@@ -1,0 +1,17 @@
+# Inventory Replenishment Agent Design Document
+
+## Agent goal
+
+The inventory replenishment agent recommends whether to place a purchase order for each SKU each day. It balances two goals: minimizing stockouts that can reduce customer trust and minimizing total inventory cost.
+
+## Inputs and outputs
+
+The agent uses recent sales demand, current inventory, open purchase orders, lead time, service level, minimum order quantity, and cost inputs. Each day, it outputs either an order quantity or a transparent wait decision. The daily log explains each decision.
+
+## Guardrails and business rules
+
+Orders respect minimum order quantities and arrive only after the configured lead time. Safety stock is calculated using forecast error, lead time, and service level. The agent orders projected demand plus safety stock and considers the trade-off between holding costs and stockout costs.
+
+## Metrics, ethics, and trust
+
+Stockouts are units of demand that cannot be fulfilled. Fill rate is fulfilled demand divided by total demand. Total cost combines holding cost, stockout cost, and purchase cost. Daily decision rationales make the automated process transparent and auditable.
